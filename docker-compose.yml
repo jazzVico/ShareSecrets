@@ -1,0 +1,8 @@
+version: "2.0"
+services:
+    sharesecrets:
+        build: .
+        volumes:
+            - "./Secret.db:/app/Secret.db"
+        ports:
+              - "9999:80"
